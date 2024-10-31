@@ -13,8 +13,12 @@ export async function basicAuth(req) {
     const [username, password] = decoded.split(':');
   
     // Replace with your credentials
-    const validUser = import.meta.env.DB_USER;
-    const validPass = import.meta.env.DB_PASSWORD;
+    // const validUser = import.meta.env.DB_USER;
+    // const validPass = import.meta.env.DB_PASSWORD;
+
+    // Replace with your credentials
+    const validUser = 'gagan';
+    const validPass = 'prez-thfarpan24';
   
     return username === validUser && password === validPass;
   }
